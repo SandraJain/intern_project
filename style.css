@@ -1,0 +1,105 @@
+/* 全域樣式 */
+body {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f1f1f1;
+}
+
+/* 主容器：雙欄排版 */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* 側邊欄 */
+.sidebar {
+  width: 220px;
+  background-color: #f7f7f8;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 14px;
+  cursor: pointer;
+}
+
+/* 聊天區域 */
+.chat-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+
+/* 標題列 */
+.chat-header {
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+  background-color: #fafafa;
+}
+
+/* 聊天紀錄 */
+.chat-window {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.message {
+  max-width: 75%;
+  padding: 10px 14px;
+  border-radius: 16px;
+  line-height: 1.4;
+}
+
+.message.bot {
+  background-color: #e5e5ea;
+  color: #000;
+  align-self: flex-start;
+}
+
+.message.user {
+  background-color: #007bff;
+  color: white;
+  align-self: flex-end;
+}
+
+/* 輸入區 */
+.chat-input {
+  display: flex;
+  padding: 12px;
+  border-top: 1px solid #ddd;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+}
+
+.chat-input button {
+  padding: 10px 16px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 0 8px 8px 0;
+  cursor: not-allowed;
+}
+
